@@ -160,7 +160,7 @@ for yaml_file in yaml_files:
     # cv2.imshow("test", crop)
     # cv2.waitKey(0)
 
-    out_crop_path = os.path.join(options.out_dir, yaml_without_ext + ".jpg")
+    out_crop_path = os.path.join(options.out_dir, yaml_file + ".jpg")
     cv2.imwrite(out_crop_path, crop )
 
 print "%d Cropped images are located in %s" % (count-1, options.out_dir)
